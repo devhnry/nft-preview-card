@@ -6,12 +6,14 @@
 */
 *, *::before, *::after {
     box-sizing: border-box;
+    transition: all linear 250ms;
 }
 /*
     2. Remove default margin
   */
   * {
     margin: 0;
+    padding: 0;
 }
 /*
     3. Allow percentage-based heights in the application
@@ -84,7 +86,99 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* ==== General Styling ====  */
 body{
-    
+    background-color: var(--clr-neutral-500);
+    color: var(--clr-neutral-100);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    font-family: var(--ff-body);
+
+    /* Project-Based  */
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    background-color: var(--clr-neutral-400);
+    border-radius: 18px;
+    width: 352px;
+    /* height: ; */
+    margin: 0 24px;
+    padding: 24px;
+}
+
+.card__description > * {
+    padding-bottom: 17px ;
+}
+
+h1{
+    text-emphasis: none;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+
+}
+
+
+.main-text{
+    color: var(--clr-primary-300);
+}
+
+.nft__img{
+    border-radius: 18px;
+}
+
+.nft__desc {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+.right,.left{
+    display: flex;
+    align-items:  center;
+}
+
+.right p{
+    color: var(--clr-primary-400);
+}
+
+.left p{
+    color: var(--clr-primary-300);
+}
+
+.nft__desc img{
+    margin-right: 3px;
+}
+
+.nft__desc p{
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+}
+
+.nft__creator{
+    display: flex;
+    align-items: center;
+}
+
+.nft__creator span{
+    color: var(--clr-primary-300);
+}
+
+.nft__creator img{
+    width: 35px;
+    border-width: 2px;
+    border: 1px solid var(--clr-neutral-100);
+    border-radius: 50px;
+    margin-right: 12px;
+}
+
+.card__description{
+    padding-top: 24px;
 }
 
 /* ==== Utility Classes ==== */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -7,42 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/css/style.css">
     <title>Frontend Mentor | NFT preview card component</title>
-    <style>
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
   </head>
   <body>
     <main class="container">
-      <picture>
-        <img src="./src/img/image-equilibrium.jpg" alt="NFT__Img">
-      </picture>
+        <img class="nft__img" src="./src/img/image-equilibrium.jpg" alt="NFT__Img">
       <section class="card__description">
         <h1>Equilibrium #3429</h1>
-        <P>Our Equilibrium collection promotes balance and calm.</P>
-        <div class="nft-desc">
-          <p>
+        <P class="main-text">Our Equilibrium collection promotes balance and calm.</P>
+        <div class="nft__desc">
+          <div class="right">
             <img src="./src/img/icon-ethereum.svg" alt="Ethereum__Icon">
-            0.041 ETH
-          </p>
-          <p>
-            <img src="./src/img/icon-clock.svg" alt="clock__icon">
-            3 days left
-          </p>
+            <p>  0.041 ETH </p>
+          </div>
+          <div class="left">
+            <img src="./src/img/icon-clock.svg" alt="clock__icon"> 
+              <p> 3 days left </p>
+          </div>
         </div>
         <div class="nft__creator">
           <img src="./src/img/image-avatar.png" alt="profile_pic">
-          <p>Creation of Jules Wyvern</p>
+          <p> <span>Creation of</span> Jules Wyvern</p>
         </div>
       </section>
     </main>
 
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">devwhnry</a>.
-    </div>
+    </div> -->
 
     <script type="module" src="./src/js/main.js"></script>
 
