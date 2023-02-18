@@ -1,3 +1,33 @@
+/* ==== Variables =====  */
+
+:root{
+    --clr-primary-300: hsl(215, 51%, 70%);
+    --clr-primary-400: hsl(178, 100%, 50%);
+    --clr-primary-450: hsla(178, 100%, 50%, 0.6);
+
+
+    --clr-neutral-500: hsl(217, 54%, 11%); /* Main Background */
+    --clr-neutral-400: hsl(216, 50%, 16%); /* Card Background */
+    --clr-neutral-300: hsl(215, 32%, 27%); /* Line Background */
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-body: 'Outfit', sans-serif;
+
+    --fs-body: 1.125rem;
+    --fs-heading: ;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+
+    --size-50: 1rem;
+    --size-100: 1.125rem;
+    --size-200: 1.5rem;
+    --size-300: 1.75rem;
+    --size-400: 2rem;
+    --size-500: ;
+
+}
 
 /* ==== CSS Reset ====  */
 
@@ -56,34 +86,6 @@ p, h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-/* ==== Variables =====  */
-
-:root{
-    --clr-primary-300: hsl(215, 51%, 70%);
-    --clr-primary-400: hsl(178, 100%, 50%);
-
-    --clr-neutral-500: hsl(217, 54%, 11%); /* Main Background */
-    --clr-neutral-400: hsl(216, 50%, 16%); /* Card Background */
-    --clr-neutral-300: hsl(215, 32%, 27%); /* Line Background */
-    --clr-neutral-100: hsl(0, 0%, 100%);
-
-    --ff-body: 'Outfit', sans-serif;
-
-    --fs-body: 1.125rem;
-    --fs-heading: ;
-
-    --fw-light: 300;
-    --fw-regular: 400;
-    --fw-semi-bold: 600;
-
-    --size-100: 1.125rem;
-    --size-200: ;
-    --size-300: ;
-    --size-400: ;
-    --size-500: ;
-
-}
-
 /* ==== General Styling ====  */
 body{
     background-color: var(--clr-neutral-500);
@@ -115,17 +117,46 @@ h1{
     font-size: var(--size-100);
 }
 
-@media (min-width: 768px) {
-
-}
-
-
 .main-text{
+    font-size: var(--size-50);
     color: var(--clr-primary-300);
+    width: 18.75rem;
 }
 
 .nft__img{
+    background-image: url(../img/image-equilibrium.jpg);
+    background-position: center;
+    background-size: cover;
     border-radius: var(--size-100);
+    width: auto;
+    height: 281px;
+}
+
+.image__container,
+.nft__img{
+    background-color: var(--clr-primary-300);
+    border-radius: var(--size-100);
+}
+
+.overlay{
+    display: grid;
+    width: auto;
+    height: 281px;
+    border-radius: var(--size-100);
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.overlay{
+    opacity: 0;
+}
+
+.overlay:hover {
+    background-color: var(--clr-primary-450);
+    cursor: pointer;
+    opacity: 1;
+
 }
 
 .nft__desc {
@@ -182,3 +213,33 @@ h1{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media (min-width: 48em){
+    .container{
+        width:  20.25rem;
+        height: 35rem;
+        padding: 24.5px;
+    }
+}
+
+@media (min-width: 90em){
+    .container{
+        width: 22rem;
+        height: 37.375rem;
+    }
+    .nft__img,
+    .overlay{
+        height: 299px;
+    }
+
+    .card__description > * {
+        padding-bottom: var(--size-300) ;
+    }
+
+    .card__description h1{
+        padding-bottom: var(--size-100);
+    }
+
+}
