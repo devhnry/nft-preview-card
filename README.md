@@ -9,7 +9,7 @@
 <div align="center">
   <!-- Profile -->
   <a href="https://www.frontendmentor.io/profile/devhnry">
-    <img src="https://img.shields.io/badge/Profile-Henry%20Taiwo-07043B?style=for-the-badge&logo=frontendmentor" alt="Melvin Profile">
+    <img src="https://img.shields.io/badge/Profile-Henry%20Taiwo-07043B?style=for-the-badge&logo=frontendmentor" alt="Henry Profile">
   </a>
   <!-- Status -->
     <a href="#">
@@ -70,7 +70,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [CSS Reset](https://www.example.com)
+- [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/)
 
 ## Author
 
