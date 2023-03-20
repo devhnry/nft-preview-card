@@ -32,15 +32,18 @@ body {
   position: absolute;
   bottom: 1rem;
   font-size: .6rem;
-  color: #8bacda; }
+  color: #8bacda;
+  transition: all .2s; }
   .footer__link {
     text-decoration: none;
     color: white; }
+    .footer__link:hover {
+      transform: scale(1.2); }
 
 .card {
   display: grid;
   gap: 1rem;
-  max-width: 23rem;
+  max-width: 22.5rem;
   background: #14253d;
   color: #8bacda;
   margin-inline: 1.5rem;

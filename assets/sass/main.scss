@@ -17,10 +17,15 @@ body{
     bottom: 1rem;
     font-size: .6rem;
     color: $clr-accent-2;
+    transition: all .2s;
 
     &__link{
         text-decoration: none;
         color: $clr-neutral-100;
+
+        &:hover{
+            transform: scale(1.2);
+        }
     }
 }
 
@@ -28,7 +33,7 @@ body{
 .card{
     display: grid;
     gap: 1rem;
-    max-width: 23rem;
+    max-width: 22.5rem;
     background: $clr-neutral-700;
     color: $clr-accent-2;
     margin-inline: 1.5rem;
