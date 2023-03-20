@@ -21,6 +21,7 @@ body{
 
     &__link{
         text-decoration: none;
+        text-decoration: underline;
         color: $clr-neutral-100;
 
         &:hover{
